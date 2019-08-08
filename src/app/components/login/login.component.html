@@ -1,0 +1,12 @@
+<div id="logreg-forms">
+    <form class="form-signin">
+        <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign in</h1>
+        <input [(ngModel)]="username" name="username" type="string" class="form-control" placeholder="Username" required="" autofocus="">
+        <input [(ngModel)]="password" name="password" type="password" class="form-control" placeholder="Password" required="">
+
+        <button (click)=checkLogin() class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Sign in</button>
+    </form>
+
+    <!-- <p>{{ username }}</p>
+    <p>{{ password }}</p> -->
+</div>

@@ -3,10 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { LogoutComponent } from './components/logout/logout.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-
+import { dashboardRoutes } from './components/dashboard/dashboard-routing.module';
 
 const routes: Routes = [
-  { path: 'dashboard', component: DashboardComponent },
+  { path: 'dashboard', children: dashboardRoutes },
   { path: 'login', component: LoginComponent },
   { path: 'logout', component: LogoutComponent },
 

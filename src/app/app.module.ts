@@ -8,6 +8,15 @@ import { LoginComponent } from './components/login/login.component';
 import { LogoutComponent } from './components/logout/logout.component';
 import { HeaderComponent } from './_components/header/header.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { FooterComponent } from './_components/footer/footer.component';
+
+import { MatExpansionModule } from '@angular/material'
+// import { MaterialModule } from './_helpers/material-module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { IntroductionComponent } from './_components/introduction/introduction.component';
+import { OverviewComponent } from './_components/overview/overview.component';
+import { TestMCComponent } from './_components/test-mc/test-mc.component';
+import { TestModComponent } from './_components/test-mod/test-mod.component'
 
 @NgModule({
   declarations: [
@@ -16,11 +25,18 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     LogoutComponent,
     HeaderComponent,
     DashboardComponent,
+    FooterComponent,
+    IntroductionComponent,
+    OverviewComponent,
+    TestMCComponent,
+    TestModComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

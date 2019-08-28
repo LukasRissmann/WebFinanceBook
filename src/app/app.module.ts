@@ -11,7 +11,6 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FooterComponent } from './_components/footer/footer.component';
 
 import { MatExpansionModule } from '@angular/material'
-// import { MaterialModule } from './_helpers/material-module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IntroductionComponent } from './_components/introduction/introduction.component';
 import { OverviewComponent } from './_components/overview/overview.component';

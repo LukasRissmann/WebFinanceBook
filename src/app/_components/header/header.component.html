@@ -11,7 +11,7 @@
                 <a class="nav-link" href="/dashboard">Tutorial<span class="sr-only">(current)</span></a>
             </li>
             <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/login" class="nav-link text-white">Login</a></li>
-            <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="nav-link text-white">LogOut</a>
+            <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="nav-link text-white" (click)='btn_logout'>LogOut</a>
             </li>
         </ul>
     </div>

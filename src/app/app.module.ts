@@ -15,7 +15,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IntroductionComponent } from './_components/introduction/introduction.component';
 import { OverviewComponent } from './_components/overview/overview.component';
 import { TestMCComponent } from './_components/test-mc/test-mc.component';
-import { TestModComponent } from './_components/test-mod/test-mod.component'
+import { TestModComponent } from './_components/test-mod/test-mod.component';
+import { ResizableModule } from 'angular-resizable-element';
+import { AngularSplitModule } from 'angular-split';
+
 
 @NgModule({
   declarations: [
@@ -35,7 +38,9 @@ import { TestModComponent } from './_components/test-mod/test-mod.component'
     BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    ResizableModule,
+    AngularSplitModule
   ],
   providers: [],
   bootstrap: [AppComponent]
